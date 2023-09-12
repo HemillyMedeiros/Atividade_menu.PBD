@@ -8,3 +8,44 @@ def multiplicar(a,b):
     return a*b
 def dividir(a,b):
     return a/b
+def menu ():
+    while True:
+        print("Escolha uma opção: ")
+        print("1. Somar")
+        print("2. Subtrair")
+        print("3. Multiplicar")
+        print("4. Dividir")
+        print("0. Sair")
+
+        opcao = input("Digite o número da opção desejada: ")
+
+        if opcao == '1':
+            a = float(input("Digite o primeiro número: "))
+            b = float(input("Digite o segundo número: "))
+            resultado = somar(a,b)
+            print("Resultado da soma: ", resultado)
+
+        elif opcao == '2':
+            a = float(input("Digite o primeiro número: "))
+            b = float(input("Digite o segundo número: "))
+            resultado = subtrair(a,b)
+            print("Resultado da subtração: ", resultado)
+
+        elif opcao == '3':
+            a = float(input("Digite o primeiro número: "))
+            b = float(input("Digite o segundo número: "))
+            resultado = multiplicar(a,b)
+            print("Resultado da multiplicação: ", resultado)
+
+        elif opcao == '4':
+            a = float(input("Digite o primeiro número: "))
+            b = float(input("Digite o segundo número: "))
+            resultado = dividir(a,b)
+            print("Resultado da divisão: ", resultado)
+
+        else:
+            opcao == '0'
+            print("Saindo")
+
+if __name__ == "__main__":
+    menu()
