@@ -1,0 +1,4 @@
+#Aluna: Hemilly Medeiros RA: RA:2041382211018
+
+def somar(a,b):
+    return a + b
